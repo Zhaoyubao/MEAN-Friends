@@ -7,14 +7,12 @@ app.use(express.static('client'));
 app.use(express.static('client/assets'));
 app.use(express.static('client/partials'));
 app.use(express.static('bower_components'));
-app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 require('./server/config/db');
 require('./server/config/routes')(app);
 
 app.listen(port, () => {
-  console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-  console.log(`Server is up. Listening on port ${port}`);
-  console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-});
+    console.log(`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`);
+    console.log(`Server is up. Listening on port ${port}`);            console.log(`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`);
+})

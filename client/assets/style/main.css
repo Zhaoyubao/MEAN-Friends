@@ -93,6 +93,7 @@ form {
         outline: none;
         border: 1px solid silver;
         border-radius: 2px;
+        margin-bottom: 5px;
         padding: 3px 6px;
     }
     input:-webkit-autofill {
@@ -119,4 +120,17 @@ a#go_back, a#home {
 a#show {
     margin-right: 15px;
     margin-left: 50px;
+}
+span.error {
+    color: orangered;
+    font-style: italic;
+    position: absolute;
+}
+span#fname {
+    top: 208px;
+    left: 55px;
+}
+span#lname {
+    top: 290px;
+    left: 55px;
 }

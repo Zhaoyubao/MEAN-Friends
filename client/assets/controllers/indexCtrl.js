@@ -19,6 +19,7 @@ app.controller('indexController', ['$scope', 'friendsFactory', function($scope, 
                 console.log(response.data);
                 getFriends();
             });
+            // .then(getFriends)
         }
     }
 
